@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+    {% if session.email %}
+        You are Register {{ session.email }} <a href="/logout">logout</a>.
+    {% else %}
+        You are not Register. <a href="/login">login</a>.
+    {% endif %}
+    </body>
+</html>
